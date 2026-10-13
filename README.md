@@ -1,6 +1,6 @@
 # Blank Bil – blankbil.no
 
-Statisk én-sides nettside (`index.html` + `favicon.svg`). Ingen byggesteg.
+Statisk én-sides nettside (`index.html`, `favicon.svg`, `robots.txt`, `sitemap.xml`). Ingen byggesteg.
 
 ## 1. Push til GitHub
 ```bash
@@ -29,7 +29,6 @@ Hver ny push til `main` publiseres automatisk.
 3. Vent på DNS (minutter til noen timer). Vercel lager HTTPS automatisk.
 
 ## Endre innhold
-- **Bilder før/etter:** legg bilder i `bilder/` og bytt en `<div class="tile">…Bilde kommer</div>` med
-  `<div class="tile"><img src="/bilder/for1.jpg" alt="Bil før vask"></div>`.
-- **Omtaler:** bytt eksempeltekstene og fjern `<span class="example">EKSEMPEL</span>`.
-- **Priser:** i seksjonen `id="priser"` og i JSON-LD øverst. Priser: 299 kr per vask, 499 kr komplett.
+- **Bilder før/etter:** bildeseksjonen ligger kommentert ut i `index.html` (`id="bilder"`). Legg ekte bilder i `bilder/`, oppdater `src`/`alt` og fjern kommentaren. Ikke bruk stock- eller eksempelbilder.
+- **Omtaler:** legg nye ekte omtaler i seksjonen `id="omtaler"`.
+- **Priser:** i `id="priser"`, prisoversikten øverst, `id="bestill"`, spørsmål og svar, og JSON-LD i `<head>`.
