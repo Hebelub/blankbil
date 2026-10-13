@@ -32,4 +32,4 @@ Hver ny push til `main` publiseres automatisk.
 - **Bilder før/etter:** legg bilder i `bilder/` og bytt en `<div class="tile">…Bilde kommer</div>` med
   `<div class="tile"><img src="/bilder/for1.jpg" alt="Bil før vask"></div>`.
 - **Omtaler:** bytt eksempeltekstene og fjern `<span class="example">EKSEMPEL</span>`.
-- **Priser:** i seksjonen `id="priser"` og i JSON-LD øverst. Komplett-prisen 450 kr er et forslag.
+- **Priser:** i seksjonen `id="priser"` og i JSON-LD øverst. Priser: 299 kr per vask, 499 kr komplett.
