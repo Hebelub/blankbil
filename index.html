@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Blank Bil – Håndvask av bil i Oslo fra 299 kr</title>
-<meta name="description" content="Grundig håndvask av bil i Oslo. Utvendig 299 kr, innvendig 299 kr, komplett 499 kr. Lever bilen i Furuveien 41, 0678 Oslo. Bestill på SMS eller ring 907 05 850.">
+<title>Blank Bil – bilvask for hånd i Oslo, fra 299 kr</title>
+<meta name="description" content="Jeg vasker bilen din for hånd i Oslo. Utvendig 299 kr, innvendig 299 kr, begge deler 499 kr. Lever bilen i Furuveien 41, 0678 Oslo. Send SMS eller ring 907 05 850.">
 <meta name="theme-color" content="#080c16">
 <meta name="format-detection" content="telephone=no">
-<link rel="canonical" href="https://blankbil.no/">
+<link rel="canonical" href="https://blankbil.vercel.app/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Blank Bil">
-<meta property="og:title" content="Blank Bil – Håndvask av bil i Oslo">
+<meta property="og:title" content="Blank Bil – bilvask for hånd i Oslo">
 <meta property="og:description" content="Utvendig 299 kr · Innvendig 299 kr · Komplett 499 kr. Furuveien 41, Oslo.">
-<meta property="og:url" content="https://blankbil.no/">
-<meta property="og:image" content="https://blankbil.no/og-image.png">
+<meta property="og:url" content="https://blankbil.vercel.app/">
+<meta property="og:image" content="https://blankbil.vercel.app/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="nb_NO">
@@ -23,17 +23,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"AutoWash","name":"Blank Bil","url":"https://blankbil.no/",
-"image":"https://blankbil.no/og-image.png",
-"description":"Grundig håndvask og innvendig rengjøring av bil i Oslo.",
+{"@context":"https://schema.org","@type":"AutoWash","name":"Blank Bil","url":"https://blankbil.vercel.app/",
+"image":"https://blankbil.vercel.app/og-image.png",
+"description":"Bilvask for hånd, utvendig og innvendig, i Oslo.",
 "telephone":"+4790705850","priceRange":"299–499 kr",
 "address":{"@type":"PostalAddress","streetAddress":"Furuveien 41","postalCode":"0678","addressLocality":"Oslo","addressCountry":"NO"},
 "areaServed":{"@type":"City","name":"Oslo"},
 "paymentAccepted":"Vipps, kontant","currenciesAccepted":"NOK",
 "hasOfferCatalog":{"@type":"OfferCatalog","name":"Bilvask","itemListElement":[
-{"@type":"Offer","price":"299","priceCurrency":"NOK","itemOffered":{"@type":"Service","name":"Utvendig håndvask"}},
-{"@type":"Offer","price":"299","priceCurrency":"NOK","itemOffered":{"@type":"Service","name":"Innvendig rengjøring"}},
-{"@type":"Offer","price":"499","priceCurrency":"NOK","itemOffered":{"@type":"Service","name":"Komplett vask inne og ute"}}]}}
+{"@type":"Offer","price":"299","priceCurrency":"NOK","itemOffered":{"@type":"Service","name":"Utvendig vask"}},
+{"@type":"Offer","price":"299","priceCurrency":"NOK","itemOffered":{"@type":"Service","name":"Innvendig vask"}},
+{"@type":"Offer","price":"499","priceCurrency":"NOK","itemOffered":{"@type":"Service","name":"Komplett: utvendig og innvendig vask"}}]}}
 </script>
 <style>
 :root{
@@ -191,14 +191,14 @@ footer{padding:28px 0 36px;color:var(--muted);font-size:.9rem}
 <section class="hero" aria-labelledby="h1">
   <div class="wrap">
     <div class="hero-text">
-      <h1 id="h1">Håndvask av bil i Oslo. <em>Grundig, fra 299&nbsp;kr.</em></h1>
-      <p>Jeg vasker bilen din for hånd – inne, ute eller begge deler. Alle er velkomne.</p>
+      <h1 id="h1">Bilvask for hånd i Oslo. <em>Fra 299&nbsp;kr.</em></h1>
+      <p>Jeg vasker bilen din for hånd, utvendig, innvendig eller begge deler. Alle er velkomne.</p>
       <div class="btn-row m-only" data-cta>
         <a class="btn btn-white" href="tel:+4790705850"><svg aria-hidden="true"><use href="#i-phone"/></svg>Ring</a>
-        <a class="btn btn-glass" href="sms:+4790705850?&amp;body=Hei%20Simeon!%20Jeg%20vil%20bestille%20bilvask%3A%20"><svg aria-hidden="true"><use href="#i-sms"/></svg>Bestill på SMS</a>
+        <a class="btn btn-glass" href="sms:+4790705850?&amp;body=Hei%20Simeon!%20Jeg%20vil%20gjerne%20bestille%20bilvask.%20"><svg aria-hidden="true"><use href="#i-sms"/></svg>Bestill på SMS</a>
       </div>
       <div class="btn-row d-only">
-        <a class="btn btn-white" href="#bestill">Bestill vask</a>
+        <a class="btn btn-white" href="#bestill">Bestill</a>
         <a class="btn btn-glass" href="#priser">Se priser</a>
       </div>
     </div>
@@ -249,47 +249,47 @@ footer{padding:28px 0 36px;color:var(--muted);font-size:.9rem}
 
 <section id="priser" aria-labelledby="priser-h"><div class="wrap">
   <div class="prices-head">
-    <div><span class="kicker">Priser</span><h2 id="priser-h">Tre pakker. Faste priser.</h2></div>
-    <p>Gjelder personbil. Du betaler med Vipps eller kontant når du henter bilen.</p>
+    <div><span class="kicker">Priser</span><h2 id="priser-h">Priser</h2></div>
+    <p>Prisene gjelder vanlig personbil. Du betaler med Vipps eller kontant når du henter bilen.</p>
   </div>
   <div class="plans">
     <article class="plan">
       <h3>Utvendig</h3>
-      <p class="sub">Ren, skinnende lakk</p>
+      <p class="sub">Vask av bilen utvendig</p>
       <div class="amount">299 <small>kr</small></div>
-      <ul><li>Forvask og håndvask</li><li>Felger og dekk</li><li>Vinduer og speil</li><li>Tørking med mikrofiber</li></ul>
+      <ul><li>Forvask og vask for hånd</li><li>Felger og dekk</li><li>Vinduer og speil</li><li>Tørker bilen med mikrofiberklut</li></ul>
     </article>
     <article class="plan best">
       <h3>Komplett</h3>
-      <p class="sub">Inne og ute</p>
+      <p class="sub">Utvendig og innvendig</p>
       <span class="save">Spar 99 kr</span>
       <div class="amount">499 <small>kr</small></div>
-      <ul><li>Alt i utvendig</li><li>Alt i innvendig</li></ul>
+      <ul><li>Alt i Utvendig</li><li>Alt i Innvendig</li></ul>
     </article>
     <article class="plan">
       <h3>Innvendig</h3>
-      <p class="sub">Frisk, ryddig kupé</p>
+      <p class="sub">Rengjøring inne i bilen</p>
       <div class="amount">299 <small>kr</small></div>
-      <ul><li>Støvsuging av seter, gulv og bagasjerom</li><li>Dashbord og paneler</li><li>Vinduer innvendig</li><li>Gulvmatter</li></ul>
+      <ul><li>Støvsuger seter, gulv og bagasjerom</li><li>Tørker av dashbord og dører</li><li>Vasker vinduene innvendig</li><li>Rengjør gulvmattene</li></ul>
     </article>
   </div>
 </div></section>
 
 <section id="slik" class="steps-sec" aria-labelledby="slik-h"><div class="wrap">
   <span class="kicker">Slik fungerer det</span>
-  <h2 id="slik-h">Ren bil i tre steg</h2>
+  <h2 id="slik-h">Sånn gjør vi det</h2>
   <ol class="steps">
-    <li><h3>Avtal tid</h3><p>Send en SMS eller ring, så finner vi et tidspunkt som passer.</p></li>
-    <li><h3>Lever bilen</h3><p>Kjør innom meg i Furuveien. Alle er velkomne, uansett hvor du bor.</p></li>
-    <li><h3>Hent en blank bil</h3><p>Se over resultatet. Er noe ikke bra nok, retter jeg det opp.</p></li>
+    <li><h3>Avtal tid</h3><p>Send SMS eller ring, så finner vi en tid som passer.</p></li>
+    <li><h3>Lever bilen</h3><p>Kom med bilen til Furuveien 41. Alle er velkomne, uansett hvor du bor.</p></li>
+    <li><h3>Hent bilen</h3><p>Se over bilen når du henter den. Er du ikke fornøyd med noe, fikser jeg det.</p></li>
   </ol>
 </div></section>
 
 <section id="om" aria-labelledby="om-h"><div class="wrap about">
   <div>
     <span class="kicker">Om meg</span>
-    <h2 id="om-h">Jeg vasker hver bil som om den var min egen.</h2>
-    <p class="lead">Jeg heter Simeon og driver Blank Bil ved siden av skolen. Alt gjøres for hånd, uten børster fra vaskehall, og jeg tar meg tid til detaljene.</p>
+    <h2 id="om-h">Jeg heter Simeon</h2>
+    <p class="lead">Jeg driver Blank Bil ved siden av skolen. Jeg vasker alt for hånd, ikke i vaskehall, og jeg tar meg god tid.</p>
     <div class="sign"><span class="mono" aria-hidden="true">S</span><div>Simeon<span>Blank Bil</span></div></div>
   </div>
   <div id="omtaler">
@@ -307,7 +307,7 @@ footer{padding:28px 0 36px;color:var(--muted);font-size:.9rem}
   Legg bildene i /bilder, fjern kommentaren og legg til litt CSS.
 
 <section id="bilder"><div class="wrap">
-  <span class="kicker">Resultater</span><h2>Før og etter</h2>
+  <span class="kicker">Bilder</span><h2>Før og etter</h2>
   <figure><img src="bilder/for-1.jpg" alt="Bil før vask" width="800" height="600" loading="lazy"><figcaption>Før</figcaption></figure>
   <figure><img src="bilder/etter-1.jpg" alt="Samme bil etter vask" width="800" height="600" loading="lazy"><figcaption>Etter</figcaption></figure>
 </div></section>
@@ -317,22 +317,22 @@ footer{padding:28px 0 36px;color:var(--muted);font-size:.9rem}
   <div class="book">
     <div>
       <span class="kicker">Bestill</span>
-      <h2 id="bestill-h">Klar for en blank bil?</h2>
-      <p class="intro">Send meg en SMS med bilmodell og pakke, så avtaler vi tid.</p>
+      <h2 id="bestill-h">Bestill vask</h2>
+      <p class="intro">Send meg en SMS med hvilken bil du har og hva du vil ha gjort, så finner vi en tid.</p>
       <a class="phone" href="tel:+4790705850">907 05 850</a>
       <div class="btn-row m-only" data-cta>
         <a class="btn btn-white" href="tel:+4790705850"><svg aria-hidden="true"><use href="#i-phone"/></svg>Ring</a>
-        <a class="btn btn-glass" href="sms:+4790705850?&amp;body=Hei%20Simeon!%20Jeg%20vil%20bestille%20bilvask%3A%20"><svg aria-hidden="true"><use href="#i-sms"/></svg>Bestill på SMS</a>
+        <a class="btn btn-glass" href="sms:+4790705850?&amp;body=Hei%20Simeon!%20Jeg%20vil%20gjerne%20bestille%20bilvask.%20"><svg aria-hidden="true"><use href="#i-sms"/></svg>Bestill på SMS</a>
       </div>
       <p class="school">Jeg går på skolen og trener mye fotball, så jeg kan ikke alltid ta telefonen. Send gjerne en SMS, så svarer jeg så fort jeg kan – og har du ringt, ringer jeg deg opp igjen.</p>
     </div>
     <div>
       <div class="desk d-only">
-        <h3>Bestill fra mobilen</h3>
-        <p>Det går raskest å sende en SMS til <strong>907 05 850</strong>. Skriv bilmodell og hvilken pakke du ønsker, så svarer jeg med et forslag til tid.</p>
+        <h3>Send meg en SMS</h3>
+        <p>Det enkleste er å sende en SMS til <strong>907 05 850</strong>. Skriv hvilken bil du har og hva du vil ha gjort, så svarer jeg med en tid som passer.</p>
       </div>
       <dl class="facts">
-        <div><dt>Levering</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Furuveien+41%2C+0678+Oslo" target="_blank" rel="noopener">Furuveien 41, 0678 Oslo</a></dd></div>
+        <div><dt>Adresse</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Furuveien+41%2C+0678+Oslo" target="_blank" rel="noopener">Furuveien 41, 0678 Oslo</a></dd></div>
         <div><dt>Betaling</dt><dd>Vipps eller kontant</dd></div>
         <div><dt>Kontakt</dt><dd>Simeon</dd></div>
       </dl>
@@ -342,11 +342,11 @@ footer{padding:28px 0 36px;color:var(--muted);font-size:.9rem}
 
 </main>
 
-<footer><div class="wrap">© 2026 Blank Bil · Håndvask av bil i Oslo</div></footer>
+<footer><div class="wrap">© 2026 Blank Bil · Bilvask for hånd i Oslo</div></footer>
 
 <nav class="mbar m-only" aria-label="Bestill">
   <a class="btn btn-white" href="tel:+4790705850"><svg aria-hidden="true"><use href="#i-phone"/></svg>Ring</a>
-  <a class="btn btn-blue" href="sms:+4790705850?&amp;body=Hei%20Simeon!%20Jeg%20vil%20bestille%20bilvask%3A%20"><svg aria-hidden="true"><use href="#i-sms"/></svg>Bestill på SMS</a>
+  <a class="btn btn-blue" href="sms:+4790705850?&amp;body=Hei%20Simeon!%20Jeg%20vil%20gjerne%20bestille%20bilvask.%20"><svg aria-hidden="true"><use href="#i-sms"/></svg>Bestill på SMS</a>
 </nav>
 <script>
 // Show the floating bar only while no other Ring/SMS buttons are on screen

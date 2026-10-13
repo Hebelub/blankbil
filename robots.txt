@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://blankbil.no/sitemap.xml
+Sitemap: https://blankbil.vercel.app/sitemap.xml
