@@ -60,6 +60,15 @@ ul.check li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-
 .feat h3{margin-top:4px}.feat p{color:var(--muted);margin:0}
 .num{display:inline-flex;width:34px;height:34px;border-radius:50%;background:#e6eeff;color:var(--brand);font-weight:800;align-items:center;justify-content:center;margin-bottom:10px}
 .ph{aspect-ratio:4/3;border:2px dashed #c9d3e1;border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--muted);background:#fff;font-size:.95rem}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
+.gal figure{margin:0;position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3;background:#e9eef5}
+.gal img{width:100%;height:100%;object-fit:cover;display:block}
+.gal figcaption{position:absolute;left:12px;bottom:12px;background:rgba(15,23,42,.78);color:#fff;font-size:.85rem;font-weight:600;padding:5px 11px;border-radius:999px}
+.tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 9px}
+.stars{color:#f5a524;letter-spacing:2px;font-size:1.05rem;margin-bottom:10px}
+.rev blockquote{color:inherit;font-style:normal;flex:1}
+.rev .who{display:flex;justify-content:space-between;align-items:center;margin-top:16px;font-size:.9rem;color:var(--muted)}
+@media(max-width:640px){.gal{grid-template-columns:1fr}}
 .note{font-size:.9rem;color:var(--muted)}
 blockquote{margin:0;color:var(--muted);font-style:italic}
 .book{background:var(--ink);color:#fff;border-radius:18px;padding:40px 32px}
@@ -128,14 +137,21 @@ footer{padding:32px 0;color:var(--muted);font-size:.9rem;border-top:1px solid va
 
 <section id="bilder" class="alt"><div class="wrap">
 <div class="eyebrow">Resultater</div><h2>Før og etter</h2>
-<div class="grid g2" style="margin-top:28px"><div class="ph">Bilde kommer: før</div><div class="ph">Bilde kommer: etter</div></div>
-<h2 style="margin-top:56px">Hva kundene sier</h2>
-<p class="note">Kundeomtaler publiseres her etter hvert. Eksemplene under er plassholdere.</p>
+<p class="note">Eksempelbilder – viser hvordan resultatene vil presenteres. Egne bilder kommer snart.</p>
+<div class="gal">
+<figure><img src="for-skitten.jpg" alt="Eksempelbilde: skitten bakrute før vask" loading="lazy"><figcaption>Før</figcaption></figure>
+<figure><img src="etter-blank.jpg" alt="Eksempelbilde: blank lakk etter vask" loading="lazy"><figcaption>Etter</figcaption></figure>
+<figure><img src="vask-skum.jpg" alt="Eksempelbilde: håndvask med skum" loading="lazy"><figcaption>Utvendig håndvask</figcaption></figure>
+<figure><img src="interior.jpg" alt="Eksempelbilde: rengjøring av interiør" loading="lazy"><figcaption>Innvendig rengjøring</figcaption></figure>
+</div>
+<p class="note" style="font-size:.75rem;margin-top:10px">Eksempelfoto via Wikimedia Commons: Nenad Stojkovic (CC BY 2.0), Dietmar Rabich (CC BY-SA 4.0), Juanacosta84 (CC BY-SA 4.0).</p>
+<h2 style="margin-top:56px">Hva kundene sier</h2></h2>
+<p class="note">Eksempler på omtaler – ekte kundeomtaler publiseres her etter hvert.</p>
 <div class="grid g3" style="margin-top:20px">
-<div class="card"><blockquote>Eksempel på omtale – plass til en ekte kundeuttalelse.</blockquote></div>
-<div class="card"><blockquote>Eksempel på omtale – plass til en ekte kundeuttalelse.</blockquote></div>
-<div class="card"><blockquote>Eksempel på omtale – plass til en ekte kundeuttalelse.</blockquote></div>
-</div></div></section>
+<div class="card rev"><div class="stars">★★★★★</div><blockquote>Bilen har ikke vært så ren siden jeg kjøpte den. Grundig jobb både inne og ute, til og med felgene skinner.</blockquote><div class="who"><span>Kunde, Oslo</span><span class="tag">Eksempel</span></div></div>
+<div class="card rev"><div class="stars">★★★★★</div><blockquote>Veldig bra pris for håndvask. Enkel booking og bilen var klar til avtalt tid.</blockquote><div class="who"><span>Kunde, Oslo</span><span class="tag">Eksempel</span></div></div>
+<div class="card rev"><div class="stars">★★★★★</div><blockquote>Hyggelig og serviceinnstilt. Hundehår og smuler i baksetet er borte – kommer garantert tilbake.</blockquote><div class="who"><span>Kunde, Oslo</span><span class="tag">Eksempel</span></div></div>
+</div></div></div></section>
 
 <section id="bestill"><div class="wrap">
 <div class="book">
