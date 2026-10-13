@@ -31,4 +31,5 @@ Hver ny push til `main` publiseres automatisk.
 ## Endre innhold
 - **Bilder før/etter:** bildeseksjonen ligger kommentert ut i `index.html` (`id="bilder"`). Legg ekte bilder i `bilder/`, oppdater `src`/`alt` og fjern kommentaren. Ikke bruk stock- eller eksempelbilder.
 - **Omtaler:** legg nye ekte omtaler i seksjonen `id="omtaler"`.
-- **Priser:** i `id="priser"`, prisoversikten øverst, `id="bestill"`, spørsmål og svar, og JSON-LD i `<head>`.
+- **Priser:** i `id="priser"` og i JSON-LD i `<head>`.
+- **Delingsbilde:** `og-image.png` (1200×630) vises når lenken deles.
