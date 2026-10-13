@@ -92,7 +92,7 @@ footer .grid{gap:10px}
 <body>
 <header class="top"><div class="wrap">
 <a class="logo" href="#"><img src="favicon.svg" alt="" width="34" height="34">Blank Bil</a>
-<nav aria-label="Hovedmeny"><a href="#priser">Priser</a><a href="#slik">Slik funker det</a><a href="#bestill">Bestill</a></nav>
+<nav aria-label="Hovedmeny"><a href="#priser">Priser</a><a href="#slik">Slik funker det</a><a href="tel:+4790705850">Ring</a></nav>
 </div></header>
 
 <main>
@@ -116,14 +116,14 @@ footer .grid{gap:10px}
 <div class="grid g3">
 <article class="card"><h3>Utvendig vask</h3><div class="price">299 <small>kr</small></div>
 <ul><li>Skylling og såpevask</li><li>Felger og dekk</li><li>Vinduer utvendig</li></ul>
-<a class="btn btn-blue" href="#bestill" data-service="Utvendig vask (299 kr)">Bestill</a></article>
+<a class="btn btn-blue" href="sms:+4790705850?&body=Hei%21%20Jeg%20vil%20bestille%3A%20Utvendig%20vask%20%28299%20kr%29">Bestill på SMS</a></article>
 <article class="card popular"><span class="tag">⭐ Mest populær</span><h3>Komplett (inne + ute)</h3><div class="price">499 <small>kr</small></div>
 <span class="save">Spar 99 kr</span>
 <ul><li>Alt i utvendig vask</li><li>Alt i innvendig vask</li><li>Bilen blank inne og ute</li></ul>
-<a class="btn btn-blue" href="#bestill" data-service="Komplett inne + ute (499 kr)">Bestill</a></article>
+<a class="btn btn-blue" href="sms:+4790705850?&body=Hei%21%20Jeg%20vil%20bestille%3A%20Komplett%20inne%20%2B%20ute%20%28499%20kr%29">Bestill på SMS</a></article>
 <article class="card"><h3>Innvendig vask</h3><div class="price">299 <small>kr</small></div>
 <ul><li>Støvsuging av seter og gulv</li><li>Tørking av dashbord og flater</li><li>Vinduer innvendig</li></ul>
-<a class="btn btn-blue" href="#bestill" data-service="Innvendig vask (299 kr)">Bestill</a></article>
+<a class="btn btn-blue" href="sms:+4790705850?&body=Hei%21%20Jeg%20vil%20bestille%3A%20Innvendig%20vask%20%28299%20kr%29">Bestill på SMS</a></article>
 </div>
 </div>
 </section>
@@ -164,29 +164,6 @@ footer .grid{gap:10px}
 </div>
 </section>
 
-<section id="bestill">
-<div class="wrap grid g2" style="align-items:start">
-<div><h2>Bestill vask</h2>
-<p class="sub">Fyll ut skjemaet, så åpnes en ferdig SMS du bare trenger å sende. Jeg svarer så fort jeg kan og bekrefter tid og adresse.</p>
-<p>Foretrekker du å ringe? <a href="tel:+4790705850"><strong>907 05 850</strong></a></p></div>
-<form class="card" id="form" novalidate>
-<div class="row">
-<label>Navn<input name="navn" required autocomplete="name"></label>
-<label>Telefon<input name="tlf" type="tel" required autocomplete="tel" inputmode="tel"></label>
-</div>
-<label>Bil (merke/modell)<input name="bil" placeholder="F.eks. Tesla Model 3"></label>
-<div class="row">
-<label>Tjeneste<select name="tjeneste" id="tjeneste">
-<option>Komplett inne + ute (499 kr)</option><option>Utvendig vask (299 kr)</option><option>Innvendig vask (299 kr)</option></select></label>
-<label>Ønsket tid<input name="tid" placeholder="F.eks. lørdag kl. 12"></label>
-</div>
-<button class="btn btn-blue" type="submit">Send bestilling på SMS</button>
-<p class="note">Fungerer ikke SMS? <a id="mail" href="mailto:solheimsimeon@gmail.com">Send på e-post i stedet</a>.</p>
-<p class="note" id="err" role="alert" style="color:#b91c1c"></p>
-</form>
-</div>
-</section>
-
 <section class="alt" id="omtaler">
 <div class="wrap">
 <h2>Hva kundene sier</h2>
@@ -213,15 +190,6 @@ footer .grid{gap:10px}
 
 <script>
 document.getElementById('y').textContent=new Date().getFullYear();
-document.querySelectorAll('[data-service]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('tjeneste').value=a.dataset.service}));
-const f=document.getElementById('form');
-function msg(){const d=new FormData(f);return `Hei! Jeg vil bestille bilvask:\nNavn: ${d.get('navn')}\nTelefon: ${d.get('tlf')}\nBil: ${d.get('bil')||'-'}\nTjeneste: ${d.get('tjeneste')}\nØnsket tid: ${d.get('tid')||'-'}`}
-function upd(){document.getElementById('mail').href='mailto:solheimsimeon@gmail.com?subject='+encodeURIComponent('Bestilling bilvask')+'&body='+encodeURIComponent(msg())}
-f.addEventListener('input',upd);upd();
-f.addEventListener('submit',e=>{e.preventDefault();const err=document.getElementById('err');
-if(!f.navn.value.trim()||!f.tlf.value.trim()){err.textContent='Fyll inn navn og telefon.';return}err.textContent='';
-const sep=/iPhone|iPad|iPod/.test(navigator.userAgent)?'&':'?';
-window.location.href='sms:+4790705850'+sep+'body='+encodeURIComponent(msg());});
 </script>
 </body>
 </html>
