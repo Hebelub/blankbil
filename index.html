@@ -70,6 +70,13 @@ dl.info dt{color:#8fa0bb;font-size:.9rem}dl.info dd{margin:0;font-weight:600}
 dl.info a{color:#fff}
 @media(max-width:480px){dl.info{grid-template-columns:1fr;gap:2px}dl.info dd{margin-bottom:12px}.btn.ghost{margin:10px 0 0}}
 footer{padding:32px 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+.m-only{display:none!important}
+.mbtns{gap:10px;margin:22px 0 4px}.mbtns .btn{flex:1;text-align:center;margin:0;white-space:nowrap;padding-left:10px;padding-right:10px}
+.book .mbtns .btn.sms{background:#fff;color:var(--ink)}
+.hero .mbtns .btn.sms{background:#fff;color:var(--brand);border:1px solid var(--brand)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:50;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+.mbar .btn{flex:1;text-align:center;margin:0;padding:12px}.mbar .btn.sms{background:#fff;color:var(--brand);border:1px solid var(--brand)}
+@media (max-width:760px) and (hover:none) and (pointer:coarse){.m-only{display:flex!important}.d-only{display:none!important}body{padding-bottom:76px}}
 </style>
 </head>
 <body>
@@ -82,7 +89,8 @@ footer{padding:32px 0;color:var(--muted);font-size:.9rem;border-top:1px solid va
 <div class="eyebrow">Bilvask i Oslo · Alle er velkomne</div>
 <h1>Grundig håndvask av bilen din – fra 299 kr</h1>
 <p class="lead">Kjør innom Furuveien 41, uansett hvor du bor. Bilen vaskes for hånd, inne og ute, med omtanke for lakk og interiør. Faste priser, ingen overraskelser.</p>
-<p style="margin-top:28px"><a class="btn" href="#bestill">Bestill time</a><a class="btn ghost" href="#priser">Se priser</a></p>
+<p class="d-only" style="margin-top:28px"><a class="btn" href="#bestill">Bestill time</a><a class="btn ghost" href="#priser">Se priser</a></p>
+<div class="mbtns m-only "><a class="btn" href="tel:+4790705850">Ring 907 05 850</a><a class="btn sms" href="sms:+4790705850?&body=Hei!%20Jeg%20vil%20bestille%20bilvask%3A">Send SMS</a></div>
 <ul class="trust"><li>Skånsom håndvask</li><li>Faste, lave priser</li><li>Betal med Vipps eller kontant</li></ul>
 </div></section>
 
@@ -136,6 +144,7 @@ footer{padding:32px 0;color:var(--muted);font-size:.9rem;border-top:1px solid va
 <p>Send en SMS eller ring for å avtale tid. Oppgi gjerne bilmodell og hvilken pakke du ønsker.</p>
 <a class="phone" href="tel:+4790705850">907 05 850</a>
 <p style="margin:0">SMS eller telefon</p>
+<div class="mbtns m-only "><a class="btn" href="tel:+4790705850">Ring 907 05 850</a><a class="btn sms" href="sms:+4790705850?&body=Hei!%20Jeg%20vil%20bestille%20bilvask%3A">Send SMS</a></div>
 <dl class="info">
 <dt>E-post</dt><dd><a href="mailto:solheimsimeon@gmail.com">solheimsimeon@gmail.com</a></dd>
 <dt>Adresse</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=Furuveien+41,+0678+Oslo" target="_blank" rel="noopener">Furuveien 41, 0678 Oslo</a></dd>
@@ -145,5 +154,6 @@ footer{padding:32px 0;color:var(--muted);font-size:.9rem;border-top:1px solid va
 </div></div></section>
 
 <footer><div class="wrap">© 2026 Blank Bil · Furuveien 41, 0678 Oslo · 907 05 850 · solheimsimeon@gmail.com</div></footer>
+<div class="mbar m-only"><a class="btn" href="tel:+4790705850">Ring</a><a class="btn sms" href="sms:+4790705850?&body=Hei!%20Jeg%20vil%20bestille%20bilvask%3A">Send SMS</a></div>
 </body>
 </html>
